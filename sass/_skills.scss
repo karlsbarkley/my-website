@@ -1,69 +1,40 @@
-// Skills section
-.aboutMe {
-  border: 1px solid red;
-  min-height: 500px;
-  height: 80%;
-  padding: 30px auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+#skills {
+  background-color: #f6f2ef;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
-
-.skills {
-  font-family: "Nanum Pen Script", "cursive";
-  display: -webkit-box;
-  display: -ms-flexbox;
+.skills-list {
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  margin: 20px auto 60px auto;
-  padding: 20px 0;
-}
+  gap: 1rem;
+  padding: 2rem 0;
 
-@media (min-width: 780px) {
-  .skills {
+  @include responsive(tab-port) {
     width: 90%;
-    margin-bottom: 100px;
   }
 }
 
 .skills li {
   list-style: none;
-  width: 80px;
+  width: 8rem;
   text-align: center;
-  padding: 20px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  padding: 2rem 0;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   font-size: 1.8rem;
-}
 
-@media (min-width: 780px) {
-  .skills li {
-    margin: 0 20px;
-    width: 120px;
+  @include responsive(tab-port) {
+    margin: 0 2rem;
+    width: 12rem;
   }
 }
 
 .skills li img {
   width: 40px;
-  margin-bottom: 5px;
-}
-
-@media (min-width: 780px) {
-  .skills li img {
-    width: 50px;
+  @include responsive(tab-port) {
+    width: 5rem;
   }
 }

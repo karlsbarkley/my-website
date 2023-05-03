@@ -6,7 +6,7 @@
   align-items: center;
   min-height: 100vh;
 
-  @include responsive(tab-land) {
+  @include responsive(tab-port) {
     flex-direction: column-reverse;
   }
 
@@ -17,10 +17,10 @@
     min-height: 50vh;
     justify-content: space-evenly;
 
-    @include responsive(tab-land) {
+    @include responsive(tab-port) {
       padding: 0 8rem;
     }
-    @include responsive(tab-port) {
+    @include responsive(phone) {
       padding: 0 4rem;
     }
   }
@@ -39,19 +39,19 @@
     }
 
     &__image {
-      width: 50rem;
-      height: 55rem;
+      width: 40rem;
+      height: 45rem;
       border-radius: 35%;
       max-height: 90%;
 
-      @include responsive(tab-land) {
+      @include responsive(tab-port) {
         margin-top: 15rem;
-        width: 70%;
-        height: 70%;
+        width: 60%;
+        height: 60%;
         border-radius: 20%;
       }
 
-      @include responsive(tab-port) {
+      @include responsive(phone) {
         margin-top: 20rem;
       }
     }

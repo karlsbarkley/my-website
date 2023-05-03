@@ -3,13 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Open+Sans:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Font Awesome Icons -->
+    <script
+      src="https://kit.fontawesome.com/94041a5a35.js"
+      crossorigin="anonymous"
+    ></script>
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="img/logo-small.png" sizes="32x32" />
@@ -69,136 +75,135 @@
     <!-- End header section -->
     <main>
       <!-- Start About me section -->
-      <div class="section about">
-        <h2 class="heading-secondary move-in-left">About me</h2>
-        <div class="about-box">
-          <div class="about__panel-1">
-            <div class="image-box">
-              <img
-                class="karly-img"
-                src="img/book.svg"
-                alt="profile photo of Karly Rosinsky"
-              />
+      <section class="section" id="about">
+        <div class="about">
+          <h2 class="heading-secondary move-in-left">About me</h2>
+          <div class="about-box">
+            <div class="about__panel-1">
+              <div class="image-box">
+                <img
+                  class="karly-img"
+                  src="img/karly.jpg"
+                  alt="profile photo of Karly Rosinsky"
+                />
+              </div>
+            </div>
+            <div class="about__panel-2">
+              <p>
+                I want to use my skills in front-end development, process
+                improvement & human behavior to help others. This comes in the
+                form of helping companies live out their mission and helping
+                individuals utilize technology as a tool to improve the things
+                they care about.
+              </p>
+              <p>
+                Some of my specific passions are education, early childhood
+                education & child development, healthcare, & sustainability.
+              </p>
             </div>
           </div>
-          <div class="about__panel-2">
-            <p>
-              I want to use my skills in front-end development, process
-              improvement & human behavior to help others. This comes in the
-              form of helping companies live out their mission and helping
-              individuals utilize technology as a tool to improve the things
-              they care about.
-            </p>
-            <p>
-              Some of my specific passions are education, early childhood
-              education & child development, healthcare, & sustainability.
-            </p>
+          <div class="accordion">
+            <button class="accordion-header">
+              <h3 class="heading-tertiary">Full bio</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                <path
+                  class="my-svg"
+                  fill="none"
+                  stroke="#7a6c62"
+                  stroke-width="3"
+                  d="M1 1l8 8 8-8"
+                />
+              </svg>
+            </button>
+            <div class="accordion-content">
+              <aside id="full-bio">
+                <h2 class="heading-secondary">My (not so) quick story</h2>
+                <p>
+                  I have always been passionate about learning & organization –
+                  I can still tell you what color-coordinated folders I’d attach
+                  to which subject (science = green, math = red). I majored in
+                  Psychology in college but found myself drawn to the technical
+                  side of the social sciences. While working in a research lab,
+                  I both administered assessments and worked with the assessment
+                  data, and I soon realized that I much preferred contributing
+                  to the lab's mission from behind-the-scenes.
+                </p>
+                <p>
+                  I then worked as an operations specialist, where I validated
+                  skills assessments, built trackers, and automated manual
+                  processes through formulas and SQL queries. My projects &
+                  responsibilities ranged in scope from manual QA to research
+                  coordinator to project manager & developer. I loved learning
+                  something new with each task, and it was in this role that I
+                  discovered how to combine my interest in human behavior while
+                  challenging myself in new ways technically. This culminated in
+                  leading a large-scale accessibility project that brought an
+                  entire assessment library into full WCAG compliance. That
+                  experience ignited my interest in pursuing a career in UX
+                  development.
+                </p>
+                <p>
+                  To pursue this interest, I have been eagerly honing my skills
+                  in front-end languages, frameworks, and design principles.
+                  Recently, I obtained a certificate in Web Development from the
+                  UC-Berkeley extension program, and I am excited to continue
+                  growing as a developer while driving my passion for continuous
+                  learning.
+                </p>
+                <h2 class="heading-tertiary">As a coworker</h2>
+                <p>
+                  I value collaboration and communication. I enjoy serving as
+                  the connection point between technically-oriented and
+                  content-oriented people on the team. I value both perspectives
+                  to ensure that all needs are met and understood. I bring
+                  positivity, eagerness to learn new things, and strong
+                  attention to detail to every project I work on.
+                </p>
+                <h2 class="heading-tertiary">As a person</h2>
+                <p>
+                  I asked
+                  <a href="https://openai.com/product/dall-e-2">DALL·E 2</a> to
+                  create an AI-generated painting for me based on my favorite
+                  things:
+                  <b
+                    >“vintage furniture, reading, a black lab (aka my dog,
+                    Oakley), house plants, nature, the Green Bay Packers,
+                    coffee, camping”</b
+                  >
+                </p>
+                <p>It did not disappoint.</p>
+                <div class="image-row">
+                  <img src="img/AI-3.png" alt="" />
+                  <img src="img/AI-2.png" alt="" />
+                  <img src="img/AI-1.png" alt="" />
+                </div>
+                <p>
+                  If I had to add to that list, I would make sure it also
+                  included puzzles (both jigsaw and word puzzles – I'm currently
+                  trying to break my max-streak of 163 days on Wordle).
+                </p>
+              </aside>
+            </div>
           </div>
         </div>
-        <div class="accordion">
-          <button class="accordion-header">
-            <h3>Full bio</h3>
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
-              <path
-                class="my-svg"
-                fill="none"
-                stroke="#7a6c62"
-                stroke-width="3"
-                d="M1 1l8 8 8-8"
-              />
-            </svg>
-          </button>
-          <div class="accordion-content">
-            <aside id="full-bio">
-              <h2 class="heading-secondary">My (not so) quick story</h2>
-              <p>
-                I have always been passionate about learning & organization – I
-                can still tell you what color-coordinated folders I’d attach to
-                which subject (science = green, math = red). I majored in
-                Psychology in college but found myself drawn to the technical
-                side of the social sciences. While working in a research lab, I
-                both administered assessments and worked with the assessment
-                data, and I soon realized that I much preferred contributing to
-                the lab's mission from behind-the-scenes.
-              </p>
-              <p>
-                I then worked as an operations specialist, where I validated
-                skills assessments, built trackers, and automated manual
-                processes through formulas and SQL queries. My projects &
-                responsibilities ranged in scope from manual QA to research
-                coordinator to project manager & developer. I loved learning
-                something new with each task, and it was in this role that I
-                discovered how to combine my interest in human behavior while
-                challenging myself in new ways technically. This culminated in
-                leading a large-scale accessibility project that brought an
-                entire assessment library into full WCAG compliance. That
-                experience ignited my interest in pursuing a career in UX
-                development.
-              </p>
-              <p>
-                To pursue this interest, I have been eagerly honing my skills in
-                front-end languages, frameworks, and design principles.
-                Recently, I obtained a certificate in Web Development from the
-                UC-Berkeley extension program, and I am excited to continue
-                growing as a developer while driving my passion for continuous
-                learning.
-              </p>
-              <h2 class="heading-tertiary">As a coworker</h2>
-              <p>
-                I value collaboration and communication. I enjoy serving as the
-                connection point between technically-oriented and
-                content-oriented people on the team. I value both perspectives
-                to ensure that all needs are met and understood. I bring
-                positivity, eagerness to learn new things, and strong attention
-                to detail to every project I work on.
-              </p>
-              <h2 class="heading-tertiary">As a person</h2>
-              <p>
-                I asked
-                <a href="https://openai.com/product/dall-e-2">DALL·E 2</a> to
-                create an AI-generated painting for me based on my favorite
-                things:
-                <b
-                  >“vintage furniture, reading, a black lab (aka my dog,
-                  Oakley), house plants, nature, the Green Bay Packers, coffee,
-                  camping”</b
-                >
-              </p>
-              <p>It did not disappoint.</p>
-              <div class="image-row">
-                <img src="img/AI-3.png" alt="" />
-                <img src="img/AI-2.png" alt="" />
-                <img src="img/AI-1.png" alt="" />
-              </div>
-              <p>
-                If I had to add to that list, I would make sure it also included
-                puzzles (both jigsaw and word puzzles – I'm currently trying to
-                break my max-streak of 163 days on Wordle).
-              </p>
-            </aside>
-          </div>
-        </div>
-      </div>
+      </section>
       <!-- End About me section -->
 
       <!-- Start Skills Section -->
-      <section class="aboutMe section" id="aboutMe">
-        <div>
-          <h2 class="heading-secondary">Skills</h2>
-          <ul class="skills">
-            <li><img src="img/html.svg" alt="html" />HTML5</li>
-            <li><img src="img/css.svg" alt="css" />CSS3</li>
-            <li><img src="img/sass.svg" alt="sass" />Sass</li>
-            <li><img src="img/javascript.svg" alt="javascript" />Javascript</li>
-            <li><img src="img/react.svg" alt="react" />React</li>
+      <section class="section" id="skills">
+        <div class="skills">
+          <h2 class="heading-tertiary">Tech stack</h2>
+          <ul class="skills-list">
+            <li><i class="icon fa-brands fa-html5"></i>HTML5</li>
+            <li><i class="icon fa-brands fa-css3-alt"></i>CSS3</li>
+            <li><i class="icon fa-brands fa-square-js"></i>Javascript</li>
+            <li><i class="icon fa-brands fa-github"></i>Github</li>
+            <li><i class="icon fa-brands fa-bootstrap"></i>Bootstrap</li>
+            <li><i class="icon fa-brands fa-sass"></i>Sass</li>
+            <li><i class="icon fa-brands fa-react"></i>React</li>
             <li>
-              <img
-                src="img/accessibility.svg"
-                alt="accessibility"
-              />Accessibility
+              <i class="icon fa-solid fa-universal-access"></i>Accessibility
             </li>
-            <li><img src="img/github.svg" alt="" />Github</li>
-            <li><img src="img/bootstrap.png" alt="" />Bootstrap</li>
           </ul>
         </div>
       </section>
@@ -324,61 +329,30 @@
           </article>
         </div>
       </section>
-    </main>
-    <!-- End Projects Section -->
 
-    <!-- Start contact Section -->
-    <div class="section" id="contact">
-      <h2>Let's Chat!</h2>
-      <p>
-        Interested in collaborating or have any questions? I'd love to hear from
-        you!
-      </p>
-      <a href="#" class="btn">Email me</a>
-    </div>
-    <!-- End Contact Section -->
+      <!-- End Projects Section -->
+
+      <!-- Start contact Section -->
+      <div class="section" id="contact">
+        <h2 class="heading-secondary">Let's Chat!</h2>
+        <p>
+          Interested in collaborating or have any questions? I'd love to hear
+          from you!
+        </p>
+        <a href="#" class="btn contact"
+          ><i class="fa-regular fa-envelope"></i
+        ></a>
+        <a href="#" class="btn contact"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="#" class="btn contact"><i class="fa-brands fa-github"></i></a>
+      </div>
+      <!-- End Contact Section -->
+    </main>
 
     <!-- Start Footer Section -->
+    <footer></footer>
 
-    <footer>
-      <nav>
-        <div class="logo">
-          <a href="#"><img src="img/logo.svg" alt="logo" /></a>
-        </div>
-        <ul class="socialsList">
-          <li>
-            <a
-              href="https://www.linkedin.com/in/karly-rosinsky/"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><i
-                class="lni lni-linkedin-original"
-                aria-label="Link to Karly's LinkedIn page."
-              ></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/karlsbarkley"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><i
-                class="lni lni-github-original"
-                aria-label="Link to Karly's GitHub page."
-              ></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://www.frontendmentor.io/profile/krosinsky"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><i aria-label="Link to Karly's Frontend Mentor profile."></i
-            ></a>
-          </li>
-        </ul>
-      </nav>
-    </footer>
     <!-- End Footer Section -->
     <script type="text/javascript" src="index.js"></script>
   </body>

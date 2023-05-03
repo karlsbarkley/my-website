@@ -13,6 +13,9 @@
 
   --btn-primary: #7a6c62;
   --btn-primary-dark: #504640;
+
+  --border-radius-sm: 5px;
+  --border-radius-img: 35%;
 }
 
 /*
@@ -86,7 +89,9 @@ html {
   }
 }
 
-body {
+body,
+li,
+a {
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -102,13 +107,14 @@ h4,
 h5,
 h6 {
   font-family: "Crimson Pro", serif;
+  line-height: normal;
+  padding: 2rem 0;
 }
 
 .heading-primary {
   font-size: 7rem;
   font-weight: 400;
   letter-spacing: 0.3rem;
-  line-height: 1;
 
   color: var(--shade-light);
 }
@@ -175,4 +181,38 @@ p {
   color: var(--shade-light);
   border-radius: 1rem;
   padding: 0.5rem 0.8rem;
+}
+
+.icon {
+  font-size: 3rem;
+}
+
+.fa-html5:hover {
+  color: #e34c26;
+}
+
+.fa-css3-alt:hover {
+  color: #2965f1;
+}
+
+.fa-square-js:hover {
+  color: #f0db4f;
+}
+
+.fa-github:hover {
+  color: #424242;
+}
+
+.fa-bootstrap:hover {
+  color: #59287a;
+}
+.fa-sass:hover {
+  color: #cc6699;
+}
+.fa-react:hover {
+  color: #61dafb;
+}
+
+.fa-universal-access:hover {
+  color: gray;
 }
