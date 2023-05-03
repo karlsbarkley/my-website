@@ -1,0 +1,18 @@
+.section {
+  padding: 0 10rem;
+  @include responsive(tab-port) {
+    padding: 0 5rem;
+  }
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1080px) {
+  .wrapper {
+    width: 80%;
+  }
+}

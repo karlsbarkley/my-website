@@ -1,0 +1,24 @@
+.about {
+  margin-top: 6rem;
+  &__panel-1 {
+    border: 1px solid orange;
+  }
+  &__panel-2 {
+    border: 1px solid gray;
+    margin-left: 4rem;
+  }
+}
+
+.about-box {
+  border: 1px solid blue;
+  display: flex;
+}
+
+.karly-img {
+  height: 300px;
+  width: 300px;
+}
+
+.test {
+  min-height: 600px;
+}

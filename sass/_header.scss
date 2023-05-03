@@ -1,0 +1,67 @@
+//Introduction Section
+.section__introduction {
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  @include responsive(tab-land) {
+    flex-direction: column-reverse;
+  }
+
+  &__panel-1 {
+    flex: 0 1 50%;
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+    justify-content: space-evenly;
+
+    @include responsive(tab-land) {
+      padding: 0 8rem;
+    }
+    @include responsive(tab-port) {
+      padding: 0 4rem;
+    }
+  }
+
+  &__panel-2 {
+    flex: 0 1 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__image-box {
+      position: relative;
+      padding: 0 5rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__image {
+      width: 50rem;
+      height: 55rem;
+      border-radius: 35%;
+      max-height: 90%;
+
+      @include responsive(tab-land) {
+        margin-top: 15rem;
+        width: 70%;
+        height: 70%;
+        border-radius: 20%;
+      }
+
+      @include responsive(tab-port) {
+        margin-top: 20rem;
+      }
+    }
+    &__decor {
+      position: absolute;
+      bottom: 0;
+      left: 5rem;
+      @include responsive(tab-land) {
+        display: none;
+      }
+    }
+  }
+}
