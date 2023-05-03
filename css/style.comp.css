@@ -18,7 +18,8 @@
   min-height: 600px; }
 
 #about-me-page {
-  margin: 3rem; }
+  border: 3px solid red;
+  margin: 10rem 5rem; }
 
 @keyframes moveInLeft {
   0% {
@@ -78,25 +79,7 @@
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
   --default-font-size: 1.6rem;
   --btn-primary: #7a6c62;
-  --btn-primary-dark: #504640;
-  --text-clr: #7a6c62;
-  --text-clr-alt: #747474;
-  --bg: #ffffff;
-  --bg-alt: #f4f3f2;
-  --pd-tag-bg: #2b5582;
-  --clr-border: #dcdbda;
-  --clr-border-drk: #c3c2c0;
-  --clr-disabled: #c0c0c0;
-  --clr-error: #c24941;
-  --clr-img-overlay: #696969;
-  --clr-img-overlay-opacity: 0.6;
-  --gutter: 4rem;
-  --gutter-sm: 3re;
-  --section-spacing: 10rem;
-  --spacing-xs: 1rem;
-  --spacing-sm: 3rem;
-  --spacing-lg: 4rem;
-  --radius: 0; }
+  --btn-primary-dark: #504640; }
 
 /*
 Media Query Manager
@@ -178,7 +161,7 @@ p {
 .btn {
   color: var(--btn-primary);
   border: 0.2rem solid var(--btn-primary);
-  padding: 1.7rem var(--spacing-sm);
+  padding: 1.7rem 2rem;
   text-align: center;
   cursor: pointer;
   line-height: 1;
@@ -190,12 +173,12 @@ p {
   align-items: center;
   justify-content: center;
   text-decoration: none; }
-  .btn--light {
-    color: var(--shade-light);
-    border: 0.2rem solid var(--shade-light); }
   .btn:hover {
     background-color: var(--btn-primary);
     color: var(--shade-light); }
+  .btn--light {
+    color: var(--shade-light);
+    border: 0.2rem solid var(--shade-light); }
   .btn--light:hover {
     background-color: var(--shade-light);
     color: var(--shade-dark); }
@@ -229,8 +212,7 @@ p {
     display: flex;
     flex-direction: column;
     min-height: 50vh;
-    justify-content: space-evenly;
-    border: 1px solid orange; }
+    justify-content: space-evenly; }
     @media only screen and (max-width: 75em) {
       .section__introduction__panel-1 {
         padding: 0 8rem; } }
@@ -241,8 +223,7 @@ p {
     flex: 0 1 50%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    border: 1px solid orange; }
+    align-items: center; }
     .section__introduction__panel-2__image-box {
       position: relative;
       padding: 0 5rem;
@@ -287,11 +268,10 @@ nav {
   height: 50px; }
 
 .links a {
-  margin-right: 30px;
-  font-size: 18px;
-  text-transform: uppercase;
+  margin-right: 3rem;
+  font-size: 2rem;
   text-decoration: none;
-  color: #333; }
+  color: var(--shade-light); }
 
 .burger {
   display: none;
