@@ -5,6 +5,7 @@
 
   --shade-light: #f6f4f5;
   --shade-dark: #7a6c62;
+  --bg-alt: #f4f3f2;
 
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
 
@@ -167,4 +168,11 @@ p {
     background-color: var(--shade-light);
     color: var(--shade-dark);
   }
+}
+
+.tech-tag {
+  background-color: var(--color-accent-dark);
+  color: var(--shade-light);
+  border-radius: 1rem;
+  padding: 0.5rem 0.8rem;
 }
