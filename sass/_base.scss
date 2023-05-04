@@ -108,14 +108,12 @@ h5,
 h6 {
   font-family: "Crimson Pro", serif;
   line-height: normal;
-  padding: 2rem 0;
 }
 
 .heading-primary {
   font-size: 7rem;
   font-weight: 400;
   letter-spacing: 0.3rem;
-
   color: var(--shade-light);
 }
 
@@ -123,6 +121,7 @@ h6 {
   font-size: 5rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
+  padding-bottom: 3rem;
 }
 
 .heading-tertiary {
@@ -139,9 +138,7 @@ h6 {
 
 p {
   font-size: 2rem;
-  &:not(:last-child) {
-    margin-bottom: 3rem;
-  }
+  margin-bottom: 3rem;
 }
 
 .btn {
@@ -174,6 +171,17 @@ p {
     background-color: var(--shade-light);
     color: var(--shade-dark);
   }
+}
+
+.tag {
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  background-color: var(--color-accent-dark);
+  color: var(--shade-light);
+  border-radius: 1rem;
+  padding: 0.5rem 0.8rem;
+  margin: 1rem;
 }
 
 .tech-tag {
@@ -215,4 +223,12 @@ p {
 
 .fa-universal-access:hover {
   color: gray;
+}
+
+.fa-jira:hover {
+  color: #0052cc;
+}
+
+.fa-wordpress-simple:hover {
+  color: #444140;
 }

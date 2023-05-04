@@ -1,14 +1,14 @@
 #skills {
   background-color: #f6f2ef;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 0;
 }
 .skills-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
-  padding: 2rem 0;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
 
   @include responsive(tab-port) {
     width: 90%;
