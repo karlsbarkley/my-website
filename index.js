@@ -1,10 +1,37 @@
 const dropdown = document.querySelector(".dropdown");
 const burger = document.querySelector(".burger");
+const dropdownLinks = document.querySelectorAll(".dropdown a");
 
 burger.addEventListener("click", () => {
   burger.classList.toggle("active");
   dropdown.classList.toggle("show");
 });
+
+dropdownLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    dropdown.classList.remove("show");
+    burger.classList.remove("active");
+  });
+});
+
+document.addEventListener("click", (e) => {
+  if (!e.target.closest(".dropdown") && !e.target.closest(".burger")) {
+    dropdown.classList.remove("show");
+    burger.classList.remove("active");
+  }
+});
+
+const mediaQuery = window.matchMedia("(min-width: 768px)");
+
+function handleDesktopMode(e) {
+  if (e.matches) {
+    dropdown.classList.remove("show");
+    burger.classList.remove("active");
+  }
+}
+
+mediaQuery.addListener(handleDesktopMode);
+handleDesktopMode(mediaQuery);
 
 // Accordion Functionality
 const accordionHeaders = document.querySelectorAll(".accordion-header");

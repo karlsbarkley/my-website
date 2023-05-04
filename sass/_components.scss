@@ -5,6 +5,13 @@
   }
 }
 
+.section-alternate {
+  padding: 4rem 10rem;
+  @include responsive(tab-port) {
+    padding: 3rem 5rem;
+  }
+}
+
 .wrapper {
   width: 90%;
   max-width: 1080px;

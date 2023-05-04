@@ -194,6 +194,7 @@ p {
 
 .accordion-header {
   border-radius: var(--border-radius-sm);
+  margin: 1rem 0;
   width: 100%;
   cursor: pointer;
   padding: 2rem;
@@ -210,8 +211,6 @@ p {
     font-weight: 400;
     font-size: 1.8rem;
     padding-right: 2rem; }
-  .accordion-header:not(:first-of-type) {
-    border-top: none; }
 
 .accordion-header.active {
   background-color: var(--shade-dark);
@@ -475,6 +474,12 @@ p {
     .section {
       padding: 10rem 5rem; } }
 
+.section-alternate {
+  padding: 4rem 10rem; }
+  @media only screen and (max-width: 56.25em) {
+    .section-alternate {
+      padding: 3rem 5rem; } }
+
 .wrapper {
   width: 90%;
   max-width: 1080px;
@@ -547,9 +552,6 @@ footer {
   height: 8rem;
   background-color: var(--color-primary); }
 
-nav.section {
-  padding: 0 3rem; }
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -565,12 +567,14 @@ nav {
 
 .links a,
 .dropdown a {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
   margin-right: 3rem;
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-decoration: none;
   color: var(--shade-light);
   padding-bottom: 5px;
-  background-image: linear-gradient(transparent 0%, transparent 90%, white 80%, white 90%);
+  background-image: linear-gradient(transparent 0%, transparent 90%, var(--shade-light) 80%, var(--shade-light) 90%);
   background-repeat: no-repeat;
   background-size: 0% 100%;
   background-position-x: right;
@@ -580,7 +584,7 @@ nav {
 .links a:visited,
 .dropdown a:link,
 .dropdown a:visited {
-  color: white; }
+  color: var(--shade-light); }
 
 .links a:hover,
 .links a:active,
@@ -631,7 +635,7 @@ nav {
   font-size: 1.8ren;
   text-transform: uppercase;
   text-decoration: none;
-  color: white; }
+  color: var(--shade-light); }
 
 @media screen and (max-width: 768px) {
   .links {
